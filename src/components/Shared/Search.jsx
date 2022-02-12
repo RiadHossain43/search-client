@@ -12,11 +12,11 @@ export const Search = () => {
     }, [debounceValue])
 
     return (
-        <div className="relative sm:ml-48 md:ml-72 sm:-mt-10 mt-3">
+        <div className="relative w-96 sm:ml-48 md:ml-72 sm:-mt-10 mt-3">
             <input
                 value={text}
                 type="text"
-                className="sm:96 h-10 dark:bg-gray-200 border rounded-md shadow-sm outline-none p-6 text-black hover:shadow-lg"
+                className="sm:96 w-full h-10 dark:bg-gray-200 border rounded-md shadow-sm outline-none p-6 text-black hover:shadow-lg"
                 placeholder="Search"
                 onChange={(e) => setText(e.target.value)}
             />
